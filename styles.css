@@ -1,7 +1,7 @@
 @import url(https://db.onlinewebfonts.com/c/c653ef3c19b3d42421a17c9a2f1502da?family=Unify+Sans);
 
 * {
-  boxbox-sizing: border-box;
+  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
   font-family: "Unify Sans";
@@ -11,10 +11,19 @@
 html {
     font-size: 16px; /* 1rem = 16px */
     line-height: 1.5; /* Default line height */
+  
     
 }
 
+body {
+ 
+}
 
+.container {
+  margin-inline: 10px;
+  width: 100%;
+  
+}
 
 h1 {
     font-size: 2.5rem; /* 40px */
@@ -61,32 +70,137 @@ li {
 
 .primary-btn {
   padding: 12px 36px;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: #ff551d;
   color: #ffffff;
   transition: 0.5s;
   border: 2px solid #ffffff;
+  text-decoration: none;
+  text-align: center;
 }
 
 .primary-btn:hover {
   background-color: #ffffff;
   color: #ff551d;
-  transform: translateY(20px);
+  transform: translateY(-10px);
   border: 2px solid #ff551d;
 }
 
 .secondary-btn {
   padding: 12px 36px;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: #ffffff;
   color: #ff551d;
   transition: 0.5s;
   border: 2px solid #ff551d;
+  text-align: center;
 }
 
 .secondary-btn:hover {
   background-color: #ff551d;
   color: #ffffff;
-  transform: translateY(20px);
+  transform: translateY(-10px);
   border: 2px solid #ffffff;
+}
+
+.menu {
+  width: 100%;
+  z-index: 20;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding-block: 15px;
+  padding-inline: 10px;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  z-index: 4;
+  
+ 
+  
+
+}
+
+.logo {
+  align-self: flex-start;
+  width: 40vw;
+  flex-grow: 1;
+}
+
+.right-menu {
+  
+  align-self: center;
+  align-content: flex-end;
+  width: calc(60%-10px);
+  display: flex;
+  flex-grow: 1;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 40vw;
+ 
+}
+
+.right-menu a {
+ font-size: 0.8rem;
+ padding: 10px 30px;
+ flex-grow: 5;
+}
+
+.right-menu a:hover {
+ transform: translateY(0px);
+}
+
+
+.right-menu i:hover {
+ color: green;
+}
+
+
+.menudiv {
+  opacity:  0;
+  background-color: white;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.2s ease-in;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.menudiv.show {
+  opacity: 1;
+}
+
+.list {
+  left: 0;
+  box-sizing: border-box;
+  padding-block: 16px;
+  z-index: 3;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+.list hr {
+ padding: 0px;
+ border: 0.7px solid black;
+}
+
+.list a {
+  display: inline-block;
+  padding: 14px 7px;
+  text-decoration: none;
+}
+
+.list a:nth-child(11) {
+  color: #ff551d;
+
 }
