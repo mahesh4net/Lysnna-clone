@@ -50,7 +50,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.1rem; /* 20px */
     line-height: 1.5; /* 30px */
     font-weight: 700;
 }
@@ -77,6 +77,7 @@ li {
   text-decoration: none;
   text-align: center;
   border: 2px solid transparent;
+  display: inline-block;
 }
 
 .primary-btn:hover {
@@ -94,6 +95,8 @@ li {
   transition: 0.5s;
   border: 2px solid #ff551d;
   text-align: center;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .secondary-btn:hover {
