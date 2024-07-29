@@ -64,7 +64,7 @@ p {
 li {
   font-size: 1rem; 
     line-height: 1.5; 
-    font-weight: 300;
+    font-weight: semibold;
 }
 
 
@@ -221,6 +221,8 @@ nav {
   padding-top: 100px;
   padding-bottom: 52px;
   color: white;
+  position: relative;
+  
 }
 
 .header h1, .header h3 {
@@ -242,3 +244,77 @@ nav {
   margin-block: 10px;
   display: inline-block;
 }
+
+.down {
+  position: absolute;
+  bottom: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 16vw;
+  height: 16vw;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0px 0px 5px black;
+  color: blue;
+  transition: 0.4s;
+  
+}
+
+.fa-angle-down {
+  font-size: 2rem;
+ 
+}
+
+.down:hover {
+ transform: scale(1.1)
+}
+
+/* features section----*/
+
+.features {
+padding-block: 50px;
+margin-top: 12vw;
+}
+
+.img-div {
+  
+}
+
+.img-div img:nth-child(1) {
+  
+}
+
+.img-div img:nth-child(1) {
+  
+}
+
+.img-div img:nth-child(1) {
+  
+}
+
+.features h1, .features h5, .features p {
+  
+}
+
+.list-items {
+  
+}
+
+.list-items li {
+  
+}
+
+.list-items ul:nth-child(1) {
+  
+}
+
+.list-items ul:nth-child(2) {
+  
+}
+
+.features a {
+  
+}
+
