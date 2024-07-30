@@ -17,12 +17,13 @@ html {
     
 }
 
+
 html {
  
 }
 
 body {
- 
+
 }
 
 .container {
@@ -32,46 +33,55 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem; /* 40px */
+    font-size: 11.1vw; /* 40px */
     line-height: 1.2; /* 48px */
     font-weight: 800;
 }
 
 h2 {
-    font-size: 2rem; /* 32px */
+    font-size: 8.88vw;
     line-height: 1.3; /* 41.6px */
     font-weight: 800;
 }
 
 h3 {
-    font-size: 1.5rem; /* 28px */
+    font-size: 6.66vw;
     line-height: 1.3; /* 36.4px */
     font-weight: 800;
 }
 
 h4 {
-    font-size: 1.5rem; /* 24px */
+    ffont-size: 6.66vw;
     line-height: 1.4; /* 33.6px */
     font-weight: 800;
 }
 
 h5 {
-    font-size: 1.1rem; /* 20px */
+    font-size: 4.9vw;
     line-height: 1.5; /* 30px */
     font-weight: 700;
 }
 
 p {
-    font-size: 1.25rem; /* 16px */
+    font-size: clamp(1rem, 5.55vw, 2.25rem);
     line-height: 1.5; /* 25.6px */
     font-weight: 500;
 }
 
 li {
-  font-size: 1rem; 
+  font-size: 4.44vw;
     line-height: 1.5; 
     font-weight: semibold;
 }
+
+a {
+  font-size: 4.44vw;
+}
+
+i {
+  font-size: 4.44vw;
+}
+
 
 
 .primary-btn {
@@ -287,6 +297,7 @@ nav {
 .features {
 padding-bottom: 20px;
 padding-top: 80px;
+font-size: 16px
 }
 
 .img-div {
@@ -405,7 +416,7 @@ text-align: center;
 background-color: white;
 border: 2px solid blue;
 border-radius: 10px;
-box-shadow: 0px 0px 5px 5px black;
+box-shadow: 0px 0px 8px black;
 color: black;
 margin-top: 3rem;
 padding-inline: 1rem;
@@ -435,3 +446,260 @@ padding-inline: 1rem;
   color: white;
   background-color: blue;
 }
+
+
+/*---- ttutorials section-----*/
+
+.tutorials {
+  padding-bottom: 2rem;
+  color: black;
+  padding-top: 4rem;
+}
+
+.tutorials h1 {
+  margin-block: 1.5rem;
+}
+
+.tutorials h5 {
+  margin-block: 1rem;
+}
+
+.tutorials p {
+  margin-block: 1rem;
+}
+
+.tutorials ul {
+  margin-block: 1rem;
+}
+
+.tutorials li {
+  margin-block: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  list-style-type: none;
+}
+
+.tutorials li::before {
+  content: '';
+  background-image: url('images/asset9.png');
+  background-size: contain;
+  background-position: center;
+  width: 1rem;
+  position: absolute;
+  height: 1rem;
+  left: 0px;
+}
+
+.tutorials a {
+  margin-block: 1.5rem;
+}
+
+.ppc {
+  width: 100%;
+  height: auto;
+  background-image: url(images/asset13.png);
+  background-size: cover;
+  background-position: center;
+  margin-block: 1.5rem;
+}
+
+.ppc img {
+  width: 60%;
+  height: auto;
+  margin-inline: auto;
+  display: block;
+}
+.tutorial hr {
+  border: none;
+  border-top: 2px solid black;
+}
+
+/*---- tools section-----*/
+
+.tools {
+  padding-bottom: 2rem;
+  color: black;
+  padding-top: 4rem;
+}
+
+.tools h1 {
+  margin-block: 1.5rem;
+}
+
+.tools h5 {
+  margin-block: 1rem;
+}
+
+.tools p {
+  margin-block: 1rem;
+}
+
+.tools ul {
+  margin-block: 1rem;
+}
+
+.tools li {
+  margin-block: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  list-style-type: none;
+}
+
+.tools li::before {
+  content: '';
+  background-image: url('images/asset9.png');
+  background-size: contain;
+  background-position: center;
+  width: 1rem;
+  position: absolute;
+  height: 1rem;
+  left: 0px;
+}
+
+.tools a {
+  margin-block: 1.5rem;
+}
+
+.keyword {
+  width: 100%;
+  height: auto;
+  margin-block: 1.5rem;
+}
+
+.keyword img {
+  width: 60%;
+  height: auto;
+  margin-inline: auto;
+  display: block;
+}
+
+/*---- blogs section-----*/
+
+.blogs {
+  background-color: #f9f5ea;
+  padding-block: 2rem;
+  
+}
+
+.blogs h2, .blogs h3 {
+  margin-bottom: 1rem;
+}
+
+.blogs a:nth-child(1) {
+ color: #0047ff; 
+}
+
+.post-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-block: 2rem;
+  
+}
+
+.head-img {
+  width: 100%;
+  overflow: hidden;
+  display: relative;
+  border-radius: 15px;
+  flex-grow: 0.4;
+  height: auto;
+}
+
+.head-img img {
+width: 130%;
+height: 130%;
+object-fit: cover;
+}
+
+.head-text {
+  width: 100%;
+  height: auto;
+  text-align: left;
+ 
+  
+}
+
+.head-text a {
+  border: 2px solid blue;
+  color: blue;
+  margin-block: 1rem;
+
+}
+
+.head-text a:hover {
+  border: 2px solid transparent;
+  color: white;
+  background-color: blue;
+}
+
+.head-text h3, .head-text p, .head-text a {
+ margin-block: 1rem;
+}
+
+  .posts {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 1rem;
+  }
+  
+  .post1 {
+    background-image: url(images/tiktok.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  
+  .post2 {
+    background-image: url(images/seo.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  
+  .post3 {
+    background-image: url(images/privacy.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  
+  .post4 {
+    background-image: url(images/tiktok.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  
+.right-btn {
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin-top: 0.8rem;
+    margin-inline: auto;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-btn i {
+    
+    margin-block: auto;
+  }
+  
+  .post1-text {
+   text-align: center;
+   padding: 1rem;
+   background-color: black;
+   color: white;
+  }
+  
+  
