@@ -10,8 +10,8 @@
 
 html {
     
-    font-size: calc(16px + 0.5vw); /* 1rem = 16px */
-    line-height: 1.5; /* Default line height */
+    font-size: calc(16px + 0.5vw);
+    line-height: 1.5; 
     scroll-behavior: smooth;
   
     
@@ -26,38 +26,38 @@ html {
 }
 
 h1 {
-    font-size: 2.5rem; /* 40px */
-    line-height: 1.2; /* 48px */
+    font-size: 2.5rem;
+    line-height: 1.2; 
     font-weight: 800;
 }
 
 h2 {
     font-size: 2rem;
-    line-height: 1.3; /* 41.6px */
+    line-height: 1.3; 
     font-weight: 800;
 }
 
 h3 {
     font-size: 1.5rem;
-    line-height: 1.3; /* 36.4px */
+    line-height: 1.3;
     font-weight: 800;
 }
 
 h4 {
     ffont-size: 1.5rem;
-    line-height: 1.4; /* 33.6px */
+    line-height: 1.4; 
     font-weight: 800;
 }
 
 h5 {
     font-size: 1.1rem;
-    line-height: 1.5; /* 30px */
+    line-height: 1.5; 
     font-weight: 700;
 }
 
 p {
     font-size: 1.25rem;
-    line-height: 1.5; /* 25.6px */
+    line-height: 1.5;
     font-weight: 500;
 }
 
@@ -916,3 +916,77 @@ object-fit: cover;
    opacity: 1;
    color: #0098fe;
  }
+ 
+ 
+ 
+ @media screen and  (min-width: 576px) {
+  
+  .stats-div div {
+    width: calc(50% - 1rem);
+  }
+  
+  
+  .head-img {
+    width: calc(50% - 1rem);
+  }
+  
+  .head-text {
+    width: calc(50% - 1rem);
+  }
+  
+  .post1, .post2, .post3, .post4 {
+    width: calc(50% - 1rem);
+  }
+  
+  .footer-flex div {
+    width: calc(50% - 1.5rem);
+  }
+  
+  .footer-flex div:nth-child(1) {
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  .footer-flex img {
+    width: calc(30vmin + 10vw);
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  
+  .input-cta {
+    padding-block: 1rem;
+    position: relative;
+    width: 90%;
+    display: block;
+    margin-inline: auto;
+  }
+  
+  .input input {
+    position: absolute;
+  }
+  
+  .input [type="email"] {
+    padding: 1rem;
+    padding-right: 30%;
+    top: 0;
+    width: 90%;
+    left: 0;
+    border-radius: 30px;
+    border: 2px solid blue;
+  
+  }
+  
+  .input [type="submit"] {
+    padding: 0.95rem;
+    text-align: center;
+    top: 0;
+    right: 0;
+    width: 40%;
+    border: 4px solid blue;
+    color: blue;
+    border-radius: 40px;
+  }
+  
+  
+}
