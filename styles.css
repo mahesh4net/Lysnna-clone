@@ -10,7 +10,7 @@
 
 html {
     
-    font-size: 16px; /* 1rem = 16px */
+    font-size: calc(16px + 0.5vw); /* 1rem = 16px */
     line-height: 1.5; /* Default line height */
     scroll-behavior: smooth;
   
@@ -18,98 +18,91 @@ html {
 }
 
 
-html {
- 
-}
-
-body {
-
-}
 
 .container {
-  padding-inline: 15px;
+  padding-inline: 1rem;
   width: 100%;
   
 }
 
 h1 {
-    font-size: 11.1vw; /* 40px */
+    font-size: 2.5rem; /* 40px */
     line-height: 1.2; /* 48px */
     font-weight: 800;
 }
 
 h2 {
-    font-size: 8.88vw;
+    font-size: 2rem;
     line-height: 1.3; /* 41.6px */
     font-weight: 800;
 }
 
 h3 {
-    font-size: 6.66vw;
+    font-size: 1.5rem;
     line-height: 1.3; /* 36.4px */
     font-weight: 800;
 }
 
 h4 {
-    ffont-size: 6.66vw;
+    ffont-size: 1.5rem;
     line-height: 1.4; /* 33.6px */
     font-weight: 800;
 }
 
 h5 {
-    font-size: 4.9vw;
+    font-size: 1.1rem;
     line-height: 1.5; /* 30px */
     font-weight: 700;
 }
 
 p {
-    font-size: clamp(1rem, 5.55vw, 2.25rem);
+    font-size: 1.25rem;
     line-height: 1.5; /* 25.6px */
     font-weight: 500;
 }
 
 li {
-  font-size: 4.44vw;
+  font-size: 1rem;
     line-height: 1.5; 
     font-weight: semibold;
 }
 
 a {
-  font-size: 4.44vw;
+  font-size: 1rem;
 }
 
 i {
-  font-size: 4.44vw;
+  font-size: 1rem;
 }
 
 
 
 .primary-btn {
-  padding: 12px 36px;
-  border-radius: 30px;
+  padding: 0.75rem 2.25rem;
+  border-radius: 1.87rem;
   background-color: #ff551d;
   color: #ffffff;
   transition: 0.5s;
   text-decoration: none;
   text-align: center;
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
   display: inline-block;
 }
 
 .primary-btn:hover {
   background-color: #ffffff;
   color: #ff551d;
-  transform: translateY(-10px);
-  border: 2px solid #ff551d;
+  transform: translateY(-0.62rem);
+  border: 0.125rem solid #ff551d;
 }
 
 .secondary-btn {
-  padding: 12px 36px;
-  border-radius: 30px;
+  padding: 0.75rem 2.25rem;
+  border-radius: 1.87rem;
   background-color: #ffffff;
   color: #ff551d;
   transition: 0.5s;
-  border: 2px solid #ff551d;
+  border: 0.125rem solid #ff551d;
   text-align: center;
   display: inline-block;
   text-decoration: none;
@@ -117,10 +110,10 @@ i {
 
 .secondary-btn:hover {
   background-color: #ff551d;
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
   color: #ffffff;
-  transform: translateY(-10px);
-  border: 2px solid #ffffff;
+  transform: translateY(-0.62rem);
+  border: 0.125rem solid #ffffff;
 }
 
 /*----menu section---*/
@@ -149,7 +142,7 @@ nav {
 
 .logo {
   align-self: flex-start;
-  width: 46vw;
+  width: 9rem;
   flex-grow: 1;
 }
 
@@ -172,7 +165,7 @@ nav {
 
 .right-menu a {
  font-size: 0.9rem;
- padding: 5px 10px;
+ padding: 0.31rem 0.62rem;
 
 }
 
@@ -211,8 +204,8 @@ nav {
 .list {
   left: 0;
   box-sizing: border-box;
-  padding-block: 16px;
-  padding-inline: 20px 20px;
+  padding-block: 1rem;
+  padding-inline: 1.25rem 1.25rem;
   z-index: 3;
   width: 100%;
   position: absolute;
@@ -221,12 +214,12 @@ nav {
 
 .list hr {
  padding: 0px;
- border: 0.7px solid black;
+ border: 0.05rem solid black;
 }
 
 .list a {
   display: inline-block;
-  padding: 14px 7px;
+  padding: 0.87rem 0.435rem;
   text-decoration: none;
 }
 
@@ -239,42 +232,42 @@ nav {
 
 .header {
   background: linear-gradient(300deg, rgba(39,168,255,1) 0%, rgba(24,102,190,1) 13%, rgba(15,66,155,1) 31%, rgba(0,4,94,1) 73%);
-  padding-top: 100px;
-  padding-bottom: 52px;
+  padding-top: 4.25rem;
+  padding-bottom: 3rem;
   color: white;
   position: relative;
   
 }
 
 .header h1, .header h3 {
-  margin-block: 40px;
+  margin-block: 2rem;
 }
 
 .header img {
   width: 90vw;
   margin-inline: auto;
-  margin-top: 40px;
+  margin-top: 2.5rem;
  
 }
 
 .header h3 {
-  padding-inline: 5px;
+  padding-inline: 0.31rem;
 }
 
 .header a {
-  margin-block: 10px;
+  margin-block: 0.62rem;
   display: inline-block;
 }
 
 .down {
   position: absolute;
-  bottom: -30px;
+  bottom: -1.87rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
-  width: 16vw;
-  height: 16vw;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   text-align: center;
   box-shadow: 0px 0px 5px black;
@@ -295,9 +288,9 @@ nav {
 /* features section----*/
 
 .features {
-padding-bottom: 20px;
-padding-top: 80px;
-font-size: 16px
+padding-bottom: 1.25rem;
+padding-top: 5rem;
+font-size: 1rem;
 }
 
 .img-div {
@@ -404,9 +397,9 @@ flex-wrap: wrap;
 .stats-div div {
   text-align: center;
   width: 95%;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background-color: rgba(0, 0, 240, 0.2); 
-  padding-block: 10px;
+  padding-block: 0.62rem;
   
 }
 
@@ -414,8 +407,8 @@ flex-wrap: wrap;
 margin-bottom: -3rem;
 text-align: center;
 background-color: white;
-border: 2px solid blue;
-border-radius: 10px;
+border: 0.125rem solid blue;
+border-radius: 0.625rem;
 box-shadow: 0px 0px 8px black;
 color: black;
 margin-top: 3rem;
@@ -435,14 +428,14 @@ padding-inline: 1rem;
 }
 
 .stats a {
-  border: 2px solid blue;
+  border: 0.125rem solid blue;
   color: blue;
   margin-block: 2rem;
   
 }
 
 .stats a:hover {
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
   color: white;
   background-color: blue;
 }
@@ -511,7 +504,7 @@ padding-inline: 1rem;
 }
 .tutorial hr {
   border: none;
-  border-top: 2px solid black;
+  border-top: 0.125rem solid black;
 }
 
 /*---- tools section-----*/
@@ -607,7 +600,7 @@ padding-inline: 1rem;
   width: 100%;
   overflow: hidden;
   display: relative;
-  border-radius: 15px;
+  border-radius: 0.93rem;
   flex-grow: 0.4;
   height: auto;
 }
@@ -627,14 +620,14 @@ object-fit: cover;
 }
 
 .head-text a {
-  border: 2px solid blue;
+  border: 0.125rem solid blue;
   color: blue;
   margin-block: 1rem;
 
 }
 
 .head-text a:hover {
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
   color: white;
   background-color: blue;
 }
@@ -645,7 +638,7 @@ object-fit: cover;
 
   .posts {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -656,7 +649,7 @@ object-fit: cover;
     background-image: url(images/tiktok.png);
     background-position: center;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     overflow: hidden;
   }
   
@@ -664,7 +657,7 @@ object-fit: cover;
     background-image: url(images/seo.jpg);
     background-position: center;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     overflow: hidden;
   }
   
@@ -672,7 +665,7 @@ object-fit: cover;
     background-image: url(images/privacy.jpg);
     background-position: center;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     overflow: hidden;
   }
   
@@ -680,7 +673,7 @@ object-fit: cover;
     background-image: url(images/tiktok.png);
     background-position: center;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     overflow: hidden;
   }
   
@@ -785,14 +778,14 @@ object-fit: cover;
   .input [type="email"] {
     padding: 1rem;
     margin-bottom: 1rem;
-    border-radius: 30px;
-    border: 2px solid blue;
+    border-radius: 1.87rem;
+    border: 0.125rem solid blue;
     width: 100%;
     
   }
   
   .input[type="email"]:focus {
-    border: 2px solid blue;
+    border: 0.125rem solid blue;
     outline: none;
   }
   
@@ -800,14 +793,14 @@ object-fit: cover;
     padding: 0.9rem;
     text-align: center;
     width: 100%;
-    border: 4px solid blue;
+    border: 0.25rem solid blue;
     color: blue;
-    border-radius: 40px;
+    border-radius: 2.5rem;
     transition: 0.4s;
   }
   
   .input [type="submit"]:hover {
-    border: 4px solid transparent;
+    border: 0.25rem solid transparent;
     color: white;
     background-color: blue;
   }
@@ -865,7 +858,7 @@ object-fit: cover;
  }
  
  .social a {
-   width: 15%;
+   width: 3.4rem;
    height: auto;
  }
  
