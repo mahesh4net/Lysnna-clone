@@ -585,8 +585,12 @@ padding-inline: 1rem;
   margin-bottom: 1rem;
 }
 
-.blogs a:nth-child(1) {
- color: #0047ff; 
+.flink {
+ color: #0047ff;
+ font-weight: bold;
+ text-decoration: none;
+ margin-top: 0.6rem;
+ display: inline-block;
 }
 
 .post-head {
@@ -653,6 +657,7 @@ object-fit: cover;
     background-position: center;
     background-size: cover;
     border-radius: 20px;
+    overflow: hidden;
   }
   
   .post2 {
@@ -660,6 +665,7 @@ object-fit: cover;
     background-position: center;
     background-size: cover;
     border-radius: 20px;
+    overflow: hidden;
   }
   
   .post3 {
@@ -667,6 +673,7 @@ object-fit: cover;
     background-position: center;
     background-size: cover;
     border-radius: 20px;
+    overflow: hidden;
   }
   
   .post4 {
@@ -674,6 +681,7 @@ object-fit: cover;
     background-position: center;
     background-size: cover;
     border-radius: 20px;
+    overflow: hidden;
   }
   
 .right-btn {
@@ -700,5 +708,212 @@ object-fit: cover;
    padding: 1rem;
    background-color: black;
    color: white;
+   transform: translateY(70%);
+   transition: 0.3s;
   }
   
+  .post1:hover .post1-text  {
+    transform: translateY(0%)
+  }
+  
+  .post2-text {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    transform: translateY(70%);
+    transition: 0.3s;
+  }
+  
+  .post2:hover .post2-text {
+    transform: translateY(0%)
+  }
+  
+  .post3-text {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    transform: translateY(73%);
+    transition: 0.3s;
+  }
+  
+  .post3:hover .post3-text {
+    transform: translateY(0%)
+  }
+  
+  .post4-text {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    transform: translateY(70%);
+    transition: 0.3s;
+  }
+  
+  .post4:hover .post4-text {
+    transform: translateY(0%)
+  }
+  
+
+  
+  /*-------newsletter section---*/
+  
+  .newsletter {
+    padding-block: 2rem;
+    background-color: white;
+    text-align: center;
+    
+  }
+  
+  .input-cta {
+    padding-block: 1rem;
+    width: 100%;
+    display: block;
+    margin-inline: auto;
+  }
+  
+  .input {
+    
+    padding-block: 1rem;
+  }
+  
+  .input input {
+    
+  }
+  
+  .input [type="email"] {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+    border: 2px solid blue;
+    width: 100%;
+    
+  }
+  
+  .input[type="email"]:focus {
+    border: 2px solid blue;
+    outline: none;
+  }
+  
+  .input [type="submit"] {
+    padding: 0.9rem;
+    text-align: center;
+    width: 100%;
+    border: 4px solid blue;
+    color: blue;
+    border-radius: 40px;
+    transition: 0.4s;
+  }
+  
+  .input [type="submit"]:hover {
+    border: 4px solid transparent;
+    color: white;
+    background-color: blue;
+  }
+  
+  /*----footer section----*/
+  
+  .footer {
+    background-color: black;
+    color: white;
+    padding-block: 3rem;
+  }
+  
+  .footer-flex {
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   row-gap: 3rem;
+   margin-bottom: 2rem;
+    
+  }
+  
+ .footer-flex div {
+   width: 80%;
+   
+   
+ }
+ 
+ .footer-flex img {
+   width: 90%;
+   height: auto;
+ }
+ 
+ .footer-flex div a {
+   display: block;
+   text-decoration: none;
+   transition: 0.4s;
+   color: white;
+   margin-block: 0.4rem;
+   
+ }
+ 
+ .footer-flex div a:hover {
+   color: #0098fe;
+ }
+ 
+ .social {
+   padding-block: 2rem;
+   width: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0.5rem;
+   margin-inline: auto
+ }
+ 
+ .social a {
+   width: 15%;
+   height: auto;
+ }
+ 
+ .social img {
+   width: 100%;
+   height: auto;
+ }
+ 
+ .copyright {
+   text-align: center;
+ }
+ 
+ .copyright p {
+   display: inline;
+   font-size: 1rem;
+ }
+ 
+ .copyright a {
+   text-decoration: none;
+   transition: 0.4s;
+   color: white;
+ }
+ 
+ .copyright a:hover {
+   color: #0098fe;
+ }
+ 
+ .credit {
+   width: 100%;
+   text-align: center;
+   margin-top: 2rem;
+ }
+ 
+ .credit p {
+   font-size: 1rem;
+   opacity: 0.4;
+   display: inline;
+ }
+ 
+ .credit a {
+   text-decoration: none;
+   transition: 0.4s;
+   color: white;
+   opacity: 0.4;
+   transition: 0.5s;
+ }
+ 
+ .credit a:hover {
+   opacity: 1;
+   color: #0098fe;
+ }
