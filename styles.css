@@ -765,13 +765,6 @@ object-fit: cover;
     
   }
   
-  .input-cta {
-    padding-block: 1rem;
-    width: 100%;
-    display: block;
-    margin-inline: auto;
-  }
-  
   .input {
     
     padding-block: 1rem;
@@ -779,6 +772,13 @@ object-fit: cover;
   
   .input input {
     
+  }
+  
+  .input-cta {
+    padding-block: 1rem;
+    width: 100%;
+    display: block;
+    margin-inline: auto;
   }
   
   .input [type="email"] {
@@ -801,7 +801,7 @@ object-fit: cover;
     width: 100%;
     border: 0.25rem solid blue;
     color: blue;
-    border-radius: 2.5rem;
+    border-radius: 1.87rem;
     transition: 0.4s;
   }
   
