@@ -1,13 +1,30 @@
 @media screen and  (min-width: 576px) {
   
+  .stats-div div {
+    width: calc(50% - 1rem);
+  }
   
   
+  .head-img {
+    width: calc(50% - 1rem);
+  }
   
+  .head-text {
+    width: calc(50% - 1rem);
+  }
   
+  .post1, .post2, .post3, .post4 {
+    width: calc(50% - 1rem);
+  }
   
+  .footer-flex div {
+    width: calc(50% - 1.5rem);
+  }
   
-  
-  
+  .footer-flex div:nth-child(1) {
+    width: calc(30vmin + 20vw);
+    flex-grow: 1;
+  }
   
   
   
